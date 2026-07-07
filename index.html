@@ -38,7 +38,7 @@ button{font-size:13px;padding:7px 14px;border-radius:8px;border:1px solid var(--
 <body>
 <div class="page">
 <h1>Maquette du MVP — Le 2e cerveau du dirigeant</h1>
-<p class="sub">Trois écrans de la première version, pour se projeter. Données 100 % fictives (éditeur SaaS imaginaire « Nolia »). Annexe visuelle au document de cadrage — <strong>modèle révisé du 7 juillet</strong> : les envois au dirigeant sont automatiques et protégés par des garde-fous ; personne ne relit chaque brief ; l'opérateur pilote par exception et fait une revue avec le dirigeant tous les 15 jours.</p>
+<p class="sub">Quatre écrans de la première version, pour se projeter. Données 100 % fictives (éditeur SaaS imaginaire « Nolia »). Annexe visuelle au document de cadrage — <strong>modèle révisé du 7 juillet</strong> : les envois au dirigeant sont automatiques et protégés par des garde-fous ; personne ne relit chaque brief ; l'opérateur pilote par exception et fait une revue avec le dirigeant tous les 15 jours.</p>
 
 <div class="zone"><i class="ti ti-mail"></i>Vue dirigeant — le brief du lundi (reçu par email ou Slack ; c'est un message, pas une application)</div>
 <div style="background:var(--surface-1);border-radius:12px;padding:16px">
@@ -82,6 +82,35 @@ button{font-size:13px;padding:7px 14px;border-radius:8px;border:1px solid var(--
           <button>Pas pertinent</button>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+<div class="zone"><i class="ti ti-message-circle"></i>Vue dirigeant — le chat : poser une question à son cerveau (au MVP, un espace Claude synchronisé avec le wiki)</div>
+<div style="background:var(--surface-1);border-radius:12px;padding:16px">
+  <div class="card" style="padding:1.25rem 1.5rem;max-width:560px;margin:0 auto">
+    <div style="display:flex;justify-content:flex-end;margin-bottom:14px">
+      <div style="background:var(--surface-1);border:1px solid var(--border);border-radius:14px 14px 4px 14px;padding:10px 14px;font-size:14px;max-width:75%">Où en est-on avec Kervan ?</div>
+    </div>
+    <div style="display:flex;gap:10px;margin-bottom:14px">
+      <div style="width:30px;height:30px;border-radius:8px;background:var(--bg-accent);color:var(--text-accent);display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="ti ti-brain" style="font-size:17px"></i></div>
+      <div style="font-size:14px;max-width:85%">
+        <p style="margin:0">Kervan est client depuis mars 2024 (ARR 15 k€, module Cœur RH). La relation est correcte mais le contact s'espace : dernier échange le 12/06, au point trimestriel. Point d'attention : <strong>le contrat arrive à échéance le 15/09 et aucun rendez-vous de renouvellement n'est planifié</strong> — c'est l'objet de l'alerte « échéance » de votre brief de lundi. Deux tickets support ouverts en juin, tous deux résolus.</p>
+        <p class="src" style="margin:8px 0 0">Sources : fiche Kervan (màj 05/07) · registre contrats · CR point trimestriel 12/06</p>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:flex-end;margin-bottom:14px">
+      <div style="background:var(--surface-1);border:1px solid var(--border);border-radius:14px 14px 4px 14px;padding:10px 14px;font-size:14px;max-width:75%">Et le partenariat Kwezio ?</div>
+    </div>
+    <div style="display:flex;gap:10px">
+      <div style="width:30px;height:30px;border-radius:8px;background:var(--bg-accent);color:var(--text-accent);display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="ti ti-brain" style="font-size:17px"></i></div>
+      <div style="font-size:14px;max-width:85%">
+        <p style="margin:0"><strong>Je ne sais pas</strong> : aucune page de votre cerveau ne couvre ce partenariat. J'ai signalé ce manque pour la prochaine revue. Si vous avez un document ou un fil Slack de référence, indiquez-le-moi et il sera intégré.</p>
+      </div>
+    </div>
+    <div style="border-top:1px solid var(--border);margin-top:16px;padding-top:12px;display:flex;gap:8px;align-items:center">
+      <div style="flex:1;border:1px solid var(--border-strong);border-radius:999px;padding:9px 16px;font-size:14px;color:var(--text-muted)">Posez une question à votre cerveau…</div>
+      <div style="width:34px;height:34px;border-radius:50%;background:var(--fill-accent);color:var(--on-accent);display:flex;align-items:center;justify-content:center"><i class="ti ti-arrow-up" style="font-size:17px"></i></div>
     </div>
   </div>
 </div>
