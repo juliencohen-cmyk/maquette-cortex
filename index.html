@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maquette MVP — Le 2e cerveau du dirigeant</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3/dist/tabler-icons.min.css">
+<style>
+:root{
+  --surface-0:#f5f4ef; --surface-1:#faf9f5; --surface-2:#ffffff;
+  --text-primary:#1a1a17; --text-secondary:#5f5e5a; --text-muted:#8a8983;
+  --border:#dedcd3; --border-strong:#c8c6bc;
+  --bg-accent:#e6f1fb; --text-accent:#185fa5; --fill-accent:#378add; --on-accent:#ffffff;
+  --bg-danger:#fcebeb; --text-danger:#a32d2d;
+  --bg-warning:#faeeda; --text-warning:#854f0b;
+  --bg-success:#eaf3de; --text-success:#3b6d11;
+  --radius:8px;
+}
+body{background:var(--surface-0);color:var(--text-primary);font-family:"Segoe UI",Arial,sans-serif;margin:0;padding:2rem 1rem;line-height:1.55}
+.page{max-width:720px;margin:0 auto}
+h1{font-size:22px;font-weight:600;margin:0 0 4px}
+.sub{font-size:14px;color:var(--text-secondary);margin:0 0 2rem}
+.zone{font-size:13px;color:var(--text-muted);margin:2rem 0 8px;display:flex;align-items:center;gap:6px}
+.pill{font-size:12px;font-weight:600;padding:2px 10px;border-radius:999px;display:inline-block;white-space:nowrap}
+.src{font-size:12px;color:var(--text-muted)}
+.item{padding:10px 0;border-top:1px solid var(--border);font-size:14px}
+.card{background:var(--surface-2);border:1px solid var(--border);border-radius:12px}
+.metric{background:var(--surface-1);border-radius:var(--radius);padding:0.9rem}
+.metric p{margin:0}
+.mlabel{font-size:12px;color:var(--text-secondary)}
+.mval{font-size:22px;font-weight:600;margin-top:2px !important}
+.row{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-top:1px solid var(--border);font-size:14px}
+.stitle{font-size:13px;font-weight:600;color:var(--text-secondary);margin:1.5rem 0 4px}
+button{font-size:13px;padding:7px 14px;border-radius:8px;border:1px solid var(--border-strong);background:transparent;cursor:default;color:var(--text-primary)}
+.note{font-size:13px;color:var(--text-secondary);border-top:1px solid var(--border);margin-top:2.5rem;padding-top:1rem}
+</style>
+</head>
+<body>
+<div class="page">
+<h1>Maquette du MVP — Le 2e cerveau du dirigeant</h1>
+<p class="sub">Trois écrans de la première version, pour se projeter. Données 100 % fictives (éditeur SaaS imaginaire « Nolia »). Annexe visuelle au document de cadrage — <strong>modèle révisé du 7 juillet</strong> : les envois au dirigeant sont automatiques et protégés par des garde-fous ; personne ne relit chaque brief ; l'opérateur pilote par exception et fait une revue avec le dirigeant tous les 15 jours.</p>
+
+<div class="zone"><i class="ti ti-mail"></i>Vue dirigeant — le brief du lundi (reçu par email ou Slack ; c'est un message, pas une application)</div>
+<div style="background:var(--surface-1);border-radius:12px;padding:16px">
+  <div class="card" style="padding:1.25rem 1.5rem;max-width:560px;margin:0 auto">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
+      <div style="width:36px;height:36px;border-radius:8px;background:var(--bg-accent);color:var(--text-accent);display:flex;align-items:center;justify-content:center"><i class="ti ti-brain" style="font-size:20px"></i></div>
+      <div>
+        <p style="margin:0;font-size:15px;font-weight:600">Votre brief de la semaine</p>
+        <p style="margin:0;font-size:13px;color:var(--text-secondary)">Nolia · lundi 6 juillet, 8h00</p>
+      </div>
+    </div>
+    <p class="stitle" style="margin-top:1.25rem">À décider cette semaine</p>
+    <div class="item">Renouvellement Batiflex (ARR 24 k€) : l'AM propose une remise de 8 %, votre arbitrage est attendu avant vendredi. <span class="src">— CR point commercial 03/07</span></div>
+    <div class="item">Recrutement CSM senior : 2 candidats en short-list, décision au comité de jeudi. <span class="src">— notes d'entretien 02/07</span></div>
+    <p class="stitle">Alertes portefeuille</p>
+    <div class="item"><span class="pill" style="background:var(--bg-danger);color:var(--text-danger)">churn</span>&nbsp; Batiflex a évoqué un non-renouvellement dans un échange du 04/07. <span class="src">— canal #compte-batiflex</span></div>
+    <div class="item"><span class="pill" style="background:var(--bg-warning);color:var(--text-warning)">échéance</span>&nbsp; 3 contrats à échéance sous 60 jours sans contact planifié : GreenRetail, Kervan, Osmo. <span class="src">— registre contrats</span></div>
+    <p class="stitle">Mouvements de la semaine</p>
+    <div class="item">MRR 84,2 k€, en hausse de 1,2 % sur la semaine. <span class="src">— tableau de bord finance, resynchronisé 05/07</span></div>
+    <div class="item">Signature Alpaga Studio (ARR 9 k€), onboarding prévu semaine 29. <span class="src">— #ventes 03/07</span></div>
+    <div class="item">Le concurrent Peoplr annonce un module paie. <span class="src">— veille du 02/07</span></div>
+    <div style="border-top:1px solid var(--border);margin-top:14px;padding-top:12px;font-size:13px;color:var(--text-secondary)">
+      <p style="margin:0"><i class="ti ti-message-circle" style="font-size:16px;vertical-align:-2px"></i> Répondez pour interroger votre cerveau — « où en est-on avec Kervan ? »</p>
+      <p style="margin:6px 0 0"><i class="ti ti-pencil" style="font-size:16px;vertical-align:-2px"></i> Une erreur ? Répondez-la — « le MRR est 84,2, pas 82,4 » — et le cerveau se corrige à la source.</p>
+    </div>
+  </div>
+</div>
+
+<div class="zone"><i class="ti ti-bell"></i>Vue dirigeant — une alerte de veilleur (poussée dans Slack au fil de l'eau, hors brief)</div>
+<div style="background:var(--surface-1);border-radius:12px;padding:16px">
+  <div class="card" style="padding:1rem 1.25rem;max-width:560px;margin:0 auto">
+    <div style="display:flex;gap:10px">
+      <div style="width:36px;height:36px;border-radius:8px;background:var(--bg-accent);color:var(--text-accent);display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="ti ti-brain" style="font-size:20px"></i></div>
+      <div style="min-width:0">
+        <p style="margin:0 0 4px;font-size:14px"><span style="font-weight:600">Cortex</span> <span style="font-size:11px;background:var(--surface-1);border:1px solid var(--border);border-radius:4px;padding:1px 4px;color:var(--text-muted)">APP</span> <span style="font-size:12px;color:var(--text-muted)">jeu. 04/07, 18h12</span></p>
+        <p style="margin:0;font-size:14px">Veilleur « résiliation » déclenché : Batiflex a écrit « on ne repartira sans doute pas l'an prochain » dans un échange d'aujourd'hui.</p>
+        <p style="margin:6px 0 0;font-size:14px;color:var(--text-secondary)">Action suggérée : appel de l'AM avant vendredi — le renouvellement (24 k€) est au 30/09.</p>
+        <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
+          <button>Voir la fiche Batiflex</button>
+          <button>Utile</button>
+          <button>Pas pertinent</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="zone"><i class="ti ti-layout-dashboard"></i>Vue opérateur — le tableau de bord de période (backstage : pilotage par exception + support de la revue bimensuelle avec le dirigeant)</div>
+<div class="card" style="overflow:hidden">
+  <div style="display:flex;align-items:center;gap:8px;padding:10px 16px;border-bottom:1px solid var(--border);background:var(--surface-1)">
+    <span style="width:10px;height:10px;border-radius:50%;background:var(--border-strong)"></span><span style="width:10px;height:10px;border-radius:50%;background:var(--border-strong)"></span><span style="width:10px;height:10px;border-radius:50%;background:var(--border-strong)"></span>
+    <span style="font-size:13px;color:var(--text-secondary);margin-left:8px">Console Cortex — client : Nolia · période du 23/06 au 07/07</span>
+  </div>
+  <div style="padding:1.25rem 1.5rem">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px">
+      <div class="metric"><p class="mlabel">Heures opérateur (15 j)</p><p class="mval">1,5 h</p></div>
+      <div class="metric"><p class="mlabel">Coût modèle (15 j)</p><p class="mval">19 €</p></div>
+      <div class="metric"><p class="mlabel">Retard typique du wiki</p><p class="mval">26 h</p></div>
+      <div class="metric"><p class="mlabel">Corrections signalées</p><p class="mval">2</p></div>
+    </div>
+    <p class="stitle">Sur la période — parti automatiquement, sans relecture</p>
+    <div class="row"><i class="ti ti-send" style="color:var(--text-secondary);font-size:17px;margin-top:2px"></i><span>2 briefs hebdo envoyés · 5 alertes poussées (4 jugées utiles) · 41 pages du wiki mises à jour · 7 questions posées au chat</span></div>
+    <p class="stitle">Ordre du jour de la revue avec le dirigeant (généré automatiquement)</p>
+    <div class="row"><span class="pill" style="background:var(--bg-success);color:var(--text-success)">corrigé</span><span>MRR 82,4 → 84,2 k€ signalé par réponse au brief du 29/06 — la page finance a été corrigée à la source, cause : mauvaise colonne lue dans le tableau de bord.</span></div>
+    <div class="row"><span class="pill" style="background:var(--bg-warning);color:var(--text-warning)">réglage</span><span>Alerte « échéance Osmo » jugée non pertinente (contrat déjà renégocié) → règle du veilleur à ajuster : exclure les contrats renégociés depuis moins de 6 mois.</span></div>
+    <div class="row"><span class="pill" style="background:var(--bg-accent);color:var(--text-accent)">référentiel</span><span>Question sans réponse au chat : « où en est le partenariat Kwezio ? » — aucune page ne couvre les partenariats → trou du référentiel à combler.</span></div>
+    <p class="stitle">Exceptions traitées (le seul travail quotidien de l'opérateur)</p>
+    <div class="row"><i class="ti ti-check" style="color:var(--text-success);font-size:17px;margin-top:2px"></i><span>05/07, 06:00 — ingestion en échec (jeton Drive expiré), reprise automatique réussie à 06:20.</span></div>
+    <div class="row"><i class="ti ti-shield" style="color:var(--text-warning);font-size:17px;margin-top:2px"></i><span>Garde-fou : 1 affirmation sans source retenue hors du brief du 06/07 — marquée « à qualifier » dans le wiki.</span></div>
+    <div style="border:1px solid var(--border-strong);border-radius:12px;padding:1rem 1.25rem;margin-top:1.25rem;background:var(--surface-1)">
+      <div style="display:flex;align-items:center;gap:8px"><i class="ti ti-calendar-event" style="font-size:18px;color:var(--text-secondary)"></i><span style="font-size:14px;font-weight:600">Prochaine revue : lundi 21/07, 9h30 — 30 min avec le dirigeant</span></div>
+      <p style="margin:8px 0 0;font-size:13px;color:var(--text-secondary)">3 points à passer en revue, 1 réglage de veilleur proposé, 1 trou de référentiel à combler.</p>
+      <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap">
+        <button style="background:var(--fill-accent);color:var(--on-accent);border:none">Préparer la revue</button>
+        <button>Appliquer le réglage proposé</button>
+        <button><i class="ti ti-git-commit" style="font-size:15px;vertical-align:-2px"></i> Journal git</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="note">Rappels de périmètre (cf. document de cadrage, modèle révisé du 07/07) : la vue dirigeant n'est <strong>pas une application</strong> — brief et alertes arrivent dans Slack ou par email, la conversation passe par un espace Claude synchronisé avec le wiki. Les envois sont <strong>automatiques</strong>, protégés par des garde-fous mécaniques (une affirmation sans source datée ne sort pas) ; le <strong>dirigeant corrige</strong> en répondant au message ; l'opérateur ne relit rien en continu — il traite les exceptions et anime la revue bimensuelle, dont cet écran est le support. Une relecture systématique n'existe que pendant la calibration (semaines 2 à 4). Cette console peut, au tout début, se réduire au dépôt git + un canal Slack : l'écran illustre la cible fonctionnelle.</p>
+</div>
+</body>
+</html>
